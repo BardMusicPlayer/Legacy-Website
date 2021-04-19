@@ -1,0 +1,22 @@
+update?v=1.2 https://dl.bardmusicplayer.com/bmp/legacy/1.2.json 301
+update?v=1.21 https://dl.bardmusicplayer.com/bmp/legacy/1.21.json 301
+update?v=1.22 https://dl.bardmusicplayer.com/bmp/legacy/1.22.json 301
+update?v=1.23 https://dl.bardmusicplayer.com/bmp/legacy/1.23.json 301
+update?v=1.24 https://dl.bardmusicplayer.com/bmp/legacy/1.24.json 301
+update?v=1.25 https://dl.bardmusicplayer.com/bmp/legacy/1.25.json 301
+
+update?f=signatures&v=1.2 https://dl.bardmusicplayer.com/bmp/legacy/signatures-1.2.json 301
+update?f=signatures&v=1.21 https://dl.bardmusicplayer.com/bmp/legacy/signatures-1.21.json 301
+update?f=signatures&v=1.22 https://dl.bardmusicplayer.com/bmp/legacy/signatures-1.22.json 301
+update?f=signatures&v=1.23 https://dl.bardmusicplayer.com/bmp/legacy/signatures-1.23.json 301
+update?f=signatures&v=1.24 https://dl.bardmusicplayer.com/bmp/legacy/signatures-1.24.json 301
+update?f=signatures&v=1.25 https://dl.bardmusicplayer.com/bmp/legacy/signatures-1.25.json 301
+
+update?f=structures&v=1.2 https://dl.bardmusicplayer.com/bmp/legacy/structures-1.2.json 301
+update?f=structures&v=1.21 https://dl.bardmusicplayer.com/bmp/legacy/structures-1.21.json 301
+update?f=structures&v=1.22 https://dl.bardmusicplayer.com/bmp/legacy/structures-1.22.json 301
+update?f=structures&v=1.23 https://dl.bardmusicplayer.com/bmp/legacy/structures-1.23.json 301
+update?f=structures&v=1.24 https://dl.bardmusicplayer.com/bmp/legacy/structures-1.24.json 301
+update?f=structures&v=1.25 https://dl.bardmusicplayer.com/bmp/legacy/structures-1.25.json 301
+
+donator https://api.bardmusicplayer.com/v1/donator 301

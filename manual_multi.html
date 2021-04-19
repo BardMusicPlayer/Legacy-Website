@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="theme-color" content="#222" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta charset="utf-8" />
+		<link href="style.css" rel="stylesheet"></link>
+		<link rel="icon" type="image/png" href="bmpicon.png" />
+		<title>Manual (advanced) for Bard Music Player</title>
+		<meta property="og:title" content="Bard Music Player for FFXIV">
+		<meta property="og:image" content="https://bardmusicplayer.com/bmpicon.png">
+		<meta property="og:description" content="Helping bards perform since 2017!">
+	</head>
+	<body>
+		<div class="content">
+			<div class="title">Multi-bard manual for <b><a href="/" style="color:inherit;">Bard Music Player</a></b></div>
+			<div class="minimenu">
+				<a class="entry" href="manual.html">Manual</a>
+				<a class="entry selected" href="manual_multi.html">Multi-bard manual</a>
+				<a class="entry" href="midi_editor.html">Midi editor guide</a>
+			</div>
+			<figure>
+			<img class="showcase" src="bmp-multi.png"></img>
+			</figure>
+
+			<p>Orchestra mode is a feature to allow for multi-track performances using multiple bards to perform the same song. The setup required to use this feature varies on the number of computers involved.
+			Typically, if an orchestra has bards from different computers (<b>standard orchestra</b>), each user must start playing individually at the same time. If all the bards from an orchestra are played on the same computer (<b>multibox orchestra</b>), this process is automatic.</p>
+
+			<p>Note that since patch 5.1, ensemble mode has been implemented in FFXIV. Ensemble lets bards hear each other synced and helps preventing random delays, and thus removes the past need for a designated conductor. Orchestrating without this mode is still possible, however it's heavily recommended to use it.</p>
+			
+			<p class="note">Trial accounts can be used as performers, unlocking both bard (level 30 and completed MSQ up to "Sylph-management" is required) and the performance action.</p>
+			<br/>
+
+			<h5>Multibox orchestra:</h5>
+			<p>If you run your orchestra on the same computer, i.e. multiboxing, you can use BMP's Local Orchestra feature. The general procedure goes like this:</p>
+			<ul>
+				<li>1. Log into your multiple game accounts. FFXIV can handle up to two instances of the game natively, so to be able to open more download and run <a href="https://www.thebuddyforum.com/threads/run-more-then-2-copies-of-ff14-at-a-time-rebornbooster.185011/" target="_blank">RebornBooster</a> as administrator.</li>
+				<li>2. Form a party with your bards. The leader of the party is the one allowed to start ensemble mode.</li>
+				<li>3. Open BMP as administrator. A window may pop-up, letting you choose to what game process you want BMP hook to. Let it load completely and then select a bard (typically, the leader of the party). Make sure “Local Orchestra” box at the bottom is ticked.</li>
+			</ul>
+
+			<p>BMP will load the bards in the same order as the party list of the selected bard. From here, you can adjust both the tracks and the octaves that they will play, as well as disabling them temporarily if you uncheck their boxes. Load a midi from the search bar and then press Open in the Local Orchestra view. All active bards should then draw out their instruments automatically. Party leader can then open ensemble mode in FFXIV and activate it, sending an ensemble request to all the bards. Make sure "All Members" is set Playback Type in Performance Settings to let the bards hear each other. Press Ensemble in BMP to accept the requests at once and start ensemble mode. You can then Test C in BMP to hear the sync of every bard: if you’re satisfied with it, press space or the Play button to start playing. If there's a noticeable delay between the bards when using Test C, press Close and repeat this step until you're happy with the result.</p>
+			<p>You can also adjust bards individually once they have started playing by using the two arrow buttons to advance or delay them by 50ms. Before clicking, you can hold Ctrl to do so by 10ms, or Shift to do it by 100ms.</p>
+			<div class="splitpanel">
+			<div style="width:48%">
+
+			<h5>Standard orchestra:</h5>
+			<p>In the past, one conductor player and party chat commands were needed. However, with Ensemble mode bards will mostly stay in sync as they started, so the process is easier.</p>
+			<p>Each performer needs to have Bard Music Player running and configured correctly, and also have a copy of the song to be performed together. Then, the party leader can start an ensemble request that each member will have to accept. A countdown will happen, and each bard will have to press Play (or space bar) at the same time when the metronome reaches 0. This countdown can be changed in the ensemble options.</p>
+
+
+			<p><br/>Bard Music Player (c) paru 2018 - 2021, (c) MoogleTroupe 2021</p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="theme-color" content="#222" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta charset="utf-8" />
+		<link href="style.css" rel="stylesheet"></link>
+		<link rel="icon" type="image/png" href="bmpicon.png" />
+		<title>Bard Music Player for FFXIV</title>
+		<meta property="og:title" content="Bard Music Player for FFXIV">
+		<meta property="og:image" content="https://bardmusicplayer.com/bmpicon.png">
+		<meta property="og:description" content="Helping bards perform since 2017!">
+	</head>
+	<body>
+		<div class="content">
+			<div class="title"><b>Bard Music Player</b> changelog</div>
+			<h4>1.23</h4>
+			<ul>
+				<li>Midi sequencer (on file load) has been updated to now automatically apply micro adjustments to each note, such that each note hit on a track is within 50ms of the next.
+				<li>Because of the above, simulate chords are no longer a thing and the checkbox in BMP has been removed. Chords are no longer a problem.
+				<li>All Midis will now be treated as T1 Midis. T0 is no longer a thing. If your created Midi does not have a T0, that is fine.
+				<li>Some UI elements have been shifted around for easier access.
+				<li>Midi files with bad entries or metadata will no longer prevent BMP from attempting to load the file.
+				<li>Input files will no longer indefinitely hold notes at the end of a song.
+				<li>Tracks with zero notes will no longer be shown in the UI.
+				<li>Songs within playlists can now be drag-and-moved to different positions.
+				<li>Right-clicking on midis in the playlist will remove them from the playlist.
+				<li>Added a "clear all songs" from playlist button.
+				<li>Users can enable and set a delay time between the current song ending and the next song in the playlist starting.
+				<li>Fixed an issue where Random mode would sometimes allow for the same song to be selected after ending.
+				<li>Local orchestra instrument names are now fuzzy matched from track name.
+				<li>Crash when playing the next song in a playlist has been fixed.
+				<li>The whitebox/appears-offscreen issue should hopefully be fixed.
+				<li>De-equiping instruments while in local orchestration now stops all bards.
+				<li>Idle bards without notes on their selected track no longer equip the previous song's instruments.
+				<li>Fixed a bug where playing a song after it had finished did not actually play notes.
+				<li>Fixed an issue that sometimes caused the Loop functionality to break.
+				<li>Fixed an issue where songs would sometimes end prematurely.
+
+			</ul>
+
+			<h4>1.22</h4>
+			<ul>
+				<li>Add warning when BMP is unable to read memory
+				<li>Added track scroll buttons to local performers to adjust sync
+				<li>Fixed crashes when issuing incorrect &lt;b.&gt; commands
+				<li>Fixed the file browser showing no files sometimes
+				<li>Fixed broken names in chatlog
+			</ul>
+			<h4>1.21</h4>
+			<ul>
+				<li>Added a local orchestra system for multiboxing an ensemble
+				<li>Added a statistics page for various midi file stats, including notes per second
+				<li>Updated BMP to detect new instruments introduced in patch 5.1
+				<li>Added command parameters for hooking process instances, setting midi input device, etc.
+				<li>Fixed various annoying UI related bugs
+				<li>Last loaded midi will now be saved and auto-loaded on startup
+				<li>Playlist functionality improvements ("Auto-play" toggle)
+				<li>Chat will now log the reason for broken midi files, permission error, etc.
+			</ul>
+			<h4>1.2</h4>
+			<ul>
+				<li>Fix compatibility with Shadowbringers
+				<li>Fix signature download would fail and corrupt the program
+				<li>Playlist can now be reordered by drag and drop (experimental)
+				<li>Expanded song browser size by occupying the upper instead of lower half
+				<li>Introduced separate hooking control
+				<li>Main GUI can now be resized in both directions
+				<li>Fix long-standing &lt;b.conduct&gt; crash bug
+				<li>Fix small issue with &lt;b.load&gt; not loading the intended song
+				<li>Fix chat window jumping around randomly at times
+				<li>Fix crash when reloading removed song
+				<li>Updated Sharlayan to latest version
+
+			</ul>
+
+			<h4>1.1</h4>
+			<ul>
+				<li>Added auto signature updating, making the program more or less invulnerable to game patches</li>
+				<li>Added Midi input option in settings</li>
+				<li>Added a simple playlist to queue up songs with options to shuffle/loop</li>
+				<li>Added a Midi browser with search functionality to replace the simple file list</li>
+				<li>Fixed time markers to show correct times</li>
+				<li>Added proper UTF-8 support for foreign languages</li>
+				<li>Fixed chat log text file issues</li>
+				<li>Added auto-translate sentences to chat log</li>
+				<li>Added a note out of range warning to keyboard</li>
+				<li>Fixed &lt;b.ss/os&gt; bugs</li>
+				<li>Fixed crashing b.conduct command</li>
+				<li>Added ability to specify instrument name in track name to automate &lt;b.open&gt; command</li>
+				<li>Added a manual character switcher/selector by right clicking the keyboard</li>
+				<li>Renamed "Fast mode" to "Simulate chords", which will be by default ON</li>
+				<li>Fixed bugs related to chat listening channel</li>
+			</ul>
+
+			<h4>1.01</h4>
+			<p>Fix for patch 4.45.</p>
+			<ul>
+				<li>Added manual Character ID switcher by right clicking the keyboard preview.</li>
+				<li>Added auto instrument and octave shift parsing from track name.</li>
+				<li>Fixed character switching bug.</li>
+				<li>The auto instrument parsing from track name is a feature to ease the use of conductor commands. Start your track name with an instrument name and an optional octave shift (For example, Flute+2) to set octave shift to +2 and auto set Flute on &lt;b.open&gt; without argument.</li>
+			</ul>
+			<h4>1.0</h4>
+			<ul>
+				<li>Entire program rewritten in C# and winforms: Providing a much better user and developer experience, such as an overhauled UI for better control over Midi files. Note frequency, octave shift preview, loaded keybinds, and such.</li>
+				<li>Proper Midi backend: A real midi engine now processes midis, providing much needed accuracy and stability. Tempo changes are reliable and accurate.</li>
+				<li>Memory reading: the program now reads memory to extract chat log, performance status, player information and such. This allows for cool things like saving the chatlog to a file or automatically pausing when exiting performance.</li>
+				<li>Multi-box support: multiple instances are now supported, with a process selector at program startup. it's possible to control several clients at once, look below</li>
+				<li>Orchestra mode: programs can now be controlled through the in-game chat with commands, providing functionality for multiple clients to play multiple tracks of one song together. synchronization may be bad, but it's on the roadmap to become better for the next release</li>
+				<li>Many, many bugfixes and enhancements: too many to list here, just download it and try it out!</li>
+
+			</p>
+		</div>
+	</body>
+</html>

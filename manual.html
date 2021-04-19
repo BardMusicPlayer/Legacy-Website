@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="theme-color" content="#222" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta charset="utf-8" />
+		<link href="style.css" rel="stylesheet"></link>
+		<link rel="icon" type="image/png" href="bmpicon.png" />
+		<title>Manual for Bard Music Player</title>
+		<meta property="og:title" content="Bard Music Player for FFXIV">
+		<meta property="og:image" content="https://bardmusicplayer.com/bmpicon.png">
+		<meta property="og:description" content="Helping bards perform since 2017!">
+	</head>
+	<body>
+		<div class="content">
+			<div class="title">Manual for <b><a href="/" style="color:inherit;">Bard Music Player</a></b></div>
+			<div class="minimenu">
+				<a class="entry selected" href="manual.html">Manual</a>
+				<a class="entry" href="manual_multi.html">Multi-bard manual</a>
+				<a class="entry" href="midi_editor.html">Midi editor guide</a>
+			</div>
+
+			<figure style="max-height:400px">
+				<img width=1178 height=653 class="showcase" src="bmp-me.png"></img>
+				<br/>
+			</figure>
+			<div style="clear:both"></div>
+			<div class="splitpanel">
+			<div style="width:35%;">
+				<br/>
+				<h5>Important</h5>
+				<p>The <i>Performance</i> action in FFXIV is very, very limited. The in-game keyboard only has three full octaves to play, whereas more advanced songs use three or more.<br/>
+				<u>Don't be surprised if the MIDI doesn't play correctly.</u></p>
+			</div>
+			<div>
+				<h4>Setting up</h4>
+				<p>Download the latest release, unzip to a folder and create a separate folder called "songs" next to the executable: this is where you place your MIDI files. You need to set up FFXIV correctly for BMP to function as intended:</p>
+				<ul>
+				<li>Through the launcher settings, <a href="dx11_settings.png" target="_blank">select DirectX 11</a> as renderer.
+				<li>In-game, <b>make sure the performance keys are all keybound</b> by opening performance mode, clicking the cog icon, and <a href="perf_settings.png" target="_blank">assigning all of the keys</a>. Do not use keybinds that need Shift, Ctrl or other modifiers.
+				<li>Make sure you have .NET Framework 4.6.2 installed.
+				</ul>
+			</div>
+			</div>
+			<h4>What are Midi files?</h4>
+			<p><strong>Midi files</strong> are tiny files to describe sequences of notes and the information surrounding them, commonly used for instrumental compositions. Bard Music Player makes use of Midi files and Midi input for playing back notes in-game.</p>
+			<p>Midi files makes use of <strong>tracks</strong>. Tracks can be thought like different parts of the song - for example, the left or the right hand on a two-track song. Tracks can also contain "hidden" playback settings, even when no notes are seen on the track - be careful! Tracks in BMP follow a "t0" format.</p>
+			<p>FFXIV performance is limited, so most midis downloaded from internet won't be played properly and have to be edited and adapted. This will be explained more in-depth in its own manual subpage. Midis downloaded from the BMP repository are edited to be compatible with the program, so you can start checking there.</p>
+			<h4>How to use BMP</h4>
+			<figure>
+				<img width=600 height=490 style="margin:0 auto;display:block;" src="bmp-tuts.png" alt="1, 2, 3, 4"></img>
+			</figure>
+			<ol>
+				<li><b>Song explorer</b>: Here you can type a filename to search for a song in your "songs" folder. The left button allows to reload a loaded song, stopping playback and reverting to 00:00.</li>
+
+				<li><b>Modifiers</b>: Here you can change the selected track (t1), allow BMP to play all tracks (not recommended), modify the playback speed (100% being normal speed) and change the octave modifier (ø0), which allows you to play a tune higher or lower pitched as long as all notes remain within three octaves.</li>
+
+				<li><b>Playback</b>: The playback slider lets you scroll to a desired part of the song and the keyboard shows the note density on each key. If the left or right side of the keyboard are colored, it means that there are notes are out of the current octave range. On the right side are basic controls for playback: a play button, a skip button (skips to the next playlist song), and a loop button (loops the current song indefinitely). At the bottom, the BPM (beats per minute) and current track name are displayed.</li>
+
+				<li><b>Playlist</b>: You can add/remove the currently loaded song and reorder the list, as well as looping/shuffling the order the songs.</li>
+
+				<li><b>FFXIV process</b>: This shows the status of BMP's connection to the FFXIV process and the associated character ID. If BMP is unable to hook in to FFXIV, you would have to set your character ID manually here.</li>
+			</ol>
+
+			<h4>Notes</h4>
+			<ul>
+				<li>While performing in-game, and as long as you don't have forced mode on, you can press Space to play/pause the current song and the arrow keys to seek through the file. </li>
+				<li>Make sure that all of the keys on the keyboard has letters labeling them. The in-game performance needs to be in "extended" mode, where the full octave range is displayed and bound.</li>
+				<li>The program supports Midi inputs, such as a Midi keyboard plugged in to the computer. You can enable it in the settings.</li>
+			</ul>
+
+			<p><br/>Bard Music Player (c) paru 2018 - 2021, (c) MoogleTroupe 2021</p>
+		</div>
+	</body>
+</html>

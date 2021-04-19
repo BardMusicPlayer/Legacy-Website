@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="theme-color" content="#222" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta charset="utf-8" />
+		<link href="style.css" rel="stylesheet"></link>
+		<link rel="icon" type="image/png" href="bmpicon.png" />
+		<title>FAQ for Bard Music Player</title>
+		<meta property="og:title" content="Bard Music Player for FFXIV">
+		<meta property="og:image" content="https://bardmusicplayer.com/bmpicon.png">
+		<meta property="og:description" content="Helping bards perform since 2017!">
+	</head>
+	<body>
+		<div class="content">
+			<div class="title">FAQ for <b><a href="/" style="color:inherit;">Bard Music Player</a></b></div>
+			<h3>Please check here if you have any problems with the program!</h3>
+			<p>First of all, please make sure you've followed the basic instructions found at the start of the <a href="manual.html">manual</a>. If you've run the program in administrator mode and still encounter problems, whether it is with Midi files or the program itself, please read below for various issues and their respective workarounds. If even then you can't solve your problem, join the <a href="https://discord.gg/mncXkGG">Discord</a> to receive support.</p>
+			<h4>Program issues</h4>
+			<ul>
+				<img src="Whitescreen.png" style="float:right"></img>
+				<li><b>"Access is denied"</b> Like said, run as administrator.</li>
+				<li><b>Permission problem</b> In some cases, when BMP is placed at locations such as Desktop or My Documents, it can refuse to work. Instead, try to place it at another location, such as C:\BMP (create the folder).</li>
+				<li><b>White/black thumbnail / BMP doesn't show</b> Find the white thumbnail of BMP at the taskbar (as pictured), hover over it and click Shift + Right click. Minimize and Maximize the window and it should appear. To fix this manually, open up the BMP settings file (go to "%localappdata%\FFBardMusicPlayer\(last modified folder)\user.config" and set the "Location" values to "0, 0".</li>
+				<li><b>"No processes found"</b> First of all, make sure that FFXIV is running. Also make sure it is running in DX11 mode in settings. If it actually is, BMP might already be running in the background. Check the taskbar like the above solution or kill all instances through the task manager.</li>
+				<!--<li><b>Chinese/Korean client doesn't work</b> Korean/China client uses older versions of the game. Please use <a href="http://bardmusicplayer.com/chkr/signatures.json">older signatures</a> corresponding to their game version.-->
+			</ul>
+			<h4>Playback issues</h4>
+			<ul>
+				<li><b>BMP can't find my song</b> Make sure they are inside the folder called "songs", next to FFBardMusicPlayer.exe</li>
+				<img src="Hxd.jpg" style="float:right"></img>
+				<li><b>"The number of tracks are invalid"</b> The midi is incorrectly formatted. Try using <a href="https://github.com/MusicalMiqo/MidiFixer/releases/tag/1.1.0">MidiFixer by MusicalMiqo</a> or, to manually fix it, open the song up in HxD and confirm the following bits are as pictured.</li>
+				<li><b>Keybindings are wrong/don't appear</b> In some cases, the character ID isn't loaded correctly. Try to reset the signature files by going to "Settings" and "Open sig folder" and removing the two files followed by restarting BMP. If it doesn't fix it, manually pick the right character ID in the bottom right.</li>
+				<li><b>Can I use my Midi keyboard?</b> Sure, check the "Midi input device" drop-down menu in the "Settings" page.</li>
+				<li><b>Why doesn't my MP3 or TXT work?</b> BMP currently only plays MIDI (.mid) files.</li>
+				<li><b>How about MML?</b> MML support is coming soon.</li>
+			</ul>
+			<h4>Other</h4>
+			<ul>
+				<li><b>What is Bard Macro Player?</b> It's a proof-of-concept and very outdated version of the program. Stop using it and download the latest one at the homepage.</li>
+				<li><b>Will I get banned for using this program?</b> Square Enix does not <a href="https://support.na.square-enix.com/rule.php?id=5382&la=1&tag=users_en" target="_blank">permit</a> "automation software" to "modify gameplay". Make of that what you will. During my two years of developing this program (with my character name clearly visible) I have not been banned.</li>
+			</ul>
+		</div>
+	</body>
+</html>
