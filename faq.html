@@ -16,7 +16,7 @@
 		<div class="content">
 			<div class="title">FAQ for <b><a href="/" style="color:inherit;">Bard Music Player</a></b></div>
 			<h3>Please check here if you have any problems with the program!</h3>
-			<p>First of all, please make sure you've followed the basic instructions found at the start of the <a href="manual.html">manual</a>. If you've run the program in administrator mode and still encounter problems, whether it is with Midi files or the program itself, please read below for various issues and their respective workarounds. If even then you can't solve your problem, join the <a href="https://discord.gg/mncXkGG">Discord</a> to receive support.</p>
+			<p>First of all, please make sure you've followed the basic instructions found at the start of the <a href="manual.html">manual</a>. If you've run the program in administrator mode and still encounter problems, whether it is with Midi files or the program itself, please read below for various issues and their respective workarounds. If even then you can't solve your problem, join the <a href="https://discord.gg/mncXkGG">Discord</a> to receive support and an updated FAQ.</p>
 			<h4>Program issues</h4>
 			<ul>
 				<img src="Whitescreen.png" style="float:right"></img>
@@ -25,6 +25,7 @@
 				<li><b>White/black thumbnail / BMP doesn't show</b> Find the white thumbnail of BMP at the taskbar (as pictured), hover over it and click Shift + Right click. Minimize and Maximize the window and it should appear. To fix this manually, open up the BMP settings file (go to "%localappdata%\FFBardMusicPlayer\(last modified folder)\user.config" and set the "Location" values to "0, 0".</li>
 				<li><b>"No processes found"</b> First of all, make sure that FFXIV is running. Also make sure it is running in DX11 mode in settings. If it actually is, BMP might already be running in the background. Check the taskbar like the above solution or kill all instances through the task manager.</li>
 				<!--<li><b>Chinese/Korean client doesn't work</b> Korean/China client uses older versions of the game. Please use <a href="http://bardmusicplayer.com/chkr/signatures.json">older signatures</a> corresponding to their game version.-->
+				<li><b>I get a white box with nothing in it when I use 1.27?</b> Click ok. It should work for you after this. We don't know what it is, but after clicking ok, it seems to work perfectly fine.
 			</ul>
 			<h4>Playback issues</h4>
 			<ul>
@@ -35,7 +36,13 @@
 				<li><b>Can I use my Midi keyboard?</b> Sure, check the "Midi input device" drop-down menu in the "Settings" page.</li>
 				<li><b>Why doesn't my MP3 or TXT work?</b> BMP currently only plays MIDI (.mid) files.</li>
 				<li><b>How about MML?</b> MML support is coming soon.</li>
+				<li><b>Some songs don't play!</b> If this occurs, please use 1.27. This is a bug where a track isn't properly named, and thus BMP thinks that the midi is blank. A fix is coming for this
+				<li><b>I tried searching something and BMP broke?</b> This is caused by attempting to search for something that doesn't exist! As long as you don't search for something that doesn't exist to BMP, you'll be fine! If you ADD a song while BMP is open, you'll need to refresh your playlist before you try searching for the midi. (you'll need to load a song then search)
+				<li><b>The tempo on my midi is weird?</b> This is similar to the first one. If your midi plays correctly but the tempo is off (ie; you're playing The Little Mermaid, it is the correct song, but sounds fast or slow) this is most likely caused from the fact that the BPM are on one of the playable tracks, but isn't on all of the playable tracks. Please us 1.27, a fix is coming for this.
 			</ul>
+			<h4>Program compatibility issues</h4>
+				<li><b>Steam</b> Don't launch the game through Steam if you're gonna use BMP. It's known to bring some issues interacting with FFXIV. You can use the official launcher or alternatives like XIVLauncher.
+				<li><b>XIVAlexander</b> Both programs can interact in a weird way, so make sure to launch BMP first and after that launch Alexander, if you absolutely have to. 
 			<h4>Other</h4>
 			<ul>
 				<li><b>What is Bard Macro Player?</b> It's a proof-of-concept and very outdated version of the program. Stop using it and download the latest one at the homepage.</li>
