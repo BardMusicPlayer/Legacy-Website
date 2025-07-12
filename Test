@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="theme-color" content="#222" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta charset="utf-8" />
+		<link href="style.css" rel="stylesheet"></link>
+		<link rel="icon" type="image/png" href="bmpicon.png" />
+		<title>Bard Music Player for FFXIV</title>
+		<meta property="og:title" content="Bard Music Player for FFXIV">
+		<meta property="og:image" content="https://bardmusicplayer.com/bmpicon.png">
+		<meta property="og:description" content="Helping bards perform since 2017!">
+
+<script>
+window.addEventListener("load", function(e) {
+	var blinky = document.getElementById("blinky");
+	setInterval(function() {
+		var rgb = "rgb(" + Math.floor(Math.random() * 180)
+			+ "," + Math.floor(Math.random() * 180) + ","
+			+ Math.floor(Math.random() * 180) + ")";
+		if(blinky) {
+			blinky.style.color = rgb;
+		}
+	}, 100);
+});
+</script>
+	</head>
+	<body>
+		<div class="content">
+			<div class="title"><b>Bard Music Players</b> for FFXIV</div>
+			<img class="showcase" style="float:left;max-width:50%;" src="bmp.png"/>
+
+			<p class="showcase" style="font-size:20px"><b>Bard Music Player</b> is an automated music player for playing MIDI songs in FFXIV using the Bard's <i>Performance</i> mode.</p>
+
+			<p>This program allows you to automatically play pre-made MIDI songs for the in-game instrument performance feature in FFXIV. In addition, it provides many more useful features such as: playlist, searching, note preview, lyrics, piano input, chat logging, and orchestra mode (multi-performer).</p>
+			
+			
+			<div style="clear:both;height:0px;"></div>
+			<div class="minimenu">
+				<a class="entry" href="changelog.html">Changelog</a>
+				<a class="entry" href="faq.html">FAQ</a>
+				<a class="entry" href="manual.html">Manual</a>
+				<a class="entry" href="https://songs.bardmusicplayer.com">Midi Repository</a>
+			</div>
+			<div class="splitpanel">
+
+			<div style="width:25%">
+				<h4>Downloads</h4>
+				<p>
+				        <br/><b>Latest Live Version:</b>
+					<br/>- <b><a href="http://dl.bardmusicplayer.com/bmp/2.1/BardMusicPlayer2.zip">BMP 2.1.1</a> (Patch 7.25)</b>
+					<br/>Old versions:
+					<br/>- <a href="https://dl.bardmusicplayer.com/bmp/legacy/FFBardMusicPlayer_1.42.zip">BMP 1.42</a> (6.5)
+					<br/>- <a href="https://dl.bardmusicplayer.com/bmp/legacy/FFBardMusicPlayer_1.4.zip">BMP 1.4</a> (5.55)
+					<br/>- <a href="https://dl.bardmusicplayer.com/bmp/legacy/FFBardMusicPlayer_1.27.zip">BMP 1.27</a> (5.55)
+					<br/>- <a href="https://dl.bardmusicplayer.com/bmp/legacy/FFBardMusicPlayer_1.25.zip">BMP 1.25</a> (5.5)
+					<br/>- <a href="https://dl.bardmusicplayer.com/bmp/legacy/FFBardMusicPlayer_1.24.zip">BMP 1.24</a> (5.4)
+					<br/>
+					<br/><b>ChipMidiEditor:</b>
+					<br/>- <a href="https://dl.bardmusicplayer.com/chipmidieditor/ChipMidiEditor-1.0.0-Setup.exe.zip">ChipMidiEditor 1.0</a>
+					<br/>
+				</p>
+			</div>
+			<div>
+				<h4>Quick start</h4>
+				<p>Download the latest BMP release. Unzip the archive and place the executable somewhere. Create a directory next to the executable called "songs", and place your MIDI files in there. Set up your game correctly as instructed in the <a href="manual.html">manual</a>. Load the MIDI file, bring up performance in-game, and then play.</p>
+				<p>Please note that this player's purpose is to only play back MIDI files. It does not automatically adjust, fine-tune, or arrange them to work flawlessly in the (already quite limited) bard performance. Either learn to edit the MIDI files to play correctly as per the <a href="manual.html">manual</a>, or check out the <a href="https://songs.bardmusicplayer.com/">Midi Repository</a>.</p>
+			</div>
+			</div>
+			<h4>Community Tutorials and Links</h4>
+			<ul class="linkdump" style="text-align:left">	
+			</ul>
+			<div>
+				<li><a href="https://reddit.com/r/ffxivperformances" target="_blank">/r/ffxivperformances</a> Performance community</li>
+				<li><a href="https://github.com/BardMusicPlayer/bardmusicplayer" target="_blank">Bard Music Player source code</a> on GitHub</li>
+				<li><a href="https://fatcatchronicles.com/bard-music-player/" target="_blank">My interview with Fat Cat Chronicles - Bard Music Player</a></li>
+				<li><a href="https://www.youtube.com/watch?v=LJIjevBUYd4" target="_blank">How to Unlock Bard Performance and Play Midi Files in Final Fantasy XIV</a></li>
+				<li><a href="https://aywren.com/2018/10/22/ffxiv-bard-music-performance-in-eorzea/" target="_blank">Aywren - FFXIV: Bard Music Performance in Eorzea</a></li>
+				<li><a href="https://twitter.com/i/moments/1062695683038240773" target="_blank">[日本語] Logue - Japanese guide to Bard Music Player (1.01)</a></li>
+				<li><a href="https://docs.google.com/document/d/1EL4Q10PsbKjx4Zby_NblOp6hKQS6R042aWsjMm9XeE4/edit" target="_blank">[한국어] CocoPomel - Korean guide to Bard Music Player</a></li>
+				<li><a href="https://docs.google.com/presentation/d/1Fei3WL8TciD0OPqbGWts7hrLXpJUM9uGOA121x2yZwQ/edit?usp=sharing" target="_blank">callmeki - Using MML to edit midi for FFXIV Bard Music Player</a></li>
+			<br/>
+			</ul>
+			</div>
+
+			<h4>Discord</h4>
+			<div class="content">
+			<iframe class="showcase" style="float:left;max-width:50%;" src="https://discord.com/widget?id=1361449015245541448&theme=dark" width="450" height="350" allowtransparency="true" frameborder="0">
+
+			<p class="showcase" style="font-size:20px"><b>Bard Music Player</b> is an automated music player for playing MIDI songs in FFXIV using the Bard's <i>Performance</i> mode.</p>
+
+			<p>This program allows you to automatically play pre-made MIDI songs for the in-game instrument performance feature in FFXIV. In addition, it provides many more useful features such as: playlist, searching, note preview, lyrics, piano input, chat logging, and orchestra mode (multi-performer).</p>
+			<div style="clear:both;height:0px;"></div>
+			<iframe src="https://discord.com/widget?id=1361449015245541448&theme=dark" width="450" height="250" allowtransparency="true" frameborder="0"></iframe>
+			<p>Feel free to join our Discord server to find useful guides, tip & tricks, or to become a MIDI editor and share your work!</p>
+		
+			</div>
+			
+			            <p style="clear:both; text-align:leftrgin-top:20px;">Bard Music Player (c) 2018 - 2025</p>
+
+			<br/><br/>
+		</div>
+	</body>
+</html>
