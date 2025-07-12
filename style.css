@@ -18,7 +18,38 @@ img.showcase {
 	height:auto;
 	box-shadow:0 0 20px -8px black;
 }
-
+.Discord {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.BMPlink{
+ width:30%;
+  text-align:center;
+  display:block;
+  background-color: transparent;
+  border: 1px solid transparent;
+  float:left;
+  padding-left: 5%;
+}
+.MB2link{
+	 width:30%;
+  text-align:center;
+  display:block;
+  background-color: transparent;
+  border: 1px solid transparent;
+  float:left;
+  padding-left: 0%;
+}
+.LAlink{
+  width:20%;
+  text-align:center;
+  display:block;
+  background-color: transparent;
+  border: 1px solid transparent;
+  float:left;
+  padding-left: 5%;
+}
 html {
 	font-family:"Segoe UI", sans-serif;
 	font-size:15pt;
