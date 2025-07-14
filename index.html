@@ -1,112 +1,79 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta name="theme-color" content="#222" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta charset="utf-8" />
-		<link href="style.css" rel="stylesheet"></link>
-		<link rel="icon" type="image/png" href="bmpicon.png" />
-		<title>Bard Music Player for FFXIV</title>
-		<meta property="og:title" content="Bard Music Player for FFXIV">
-		<meta property="og:image" content="https://bardmusicplayer.com/bmpicon.png">
-		<meta property="og:description" content="Helping bards perform since 2017!">
-
-<script>
-window.addEventListener("load", function(e) {
-	var blinky = document.getElementById("blinky");
-	setInterval(function() {
-		var rgb = "rgb(" + Math.floor(Math.random() * 180)
-			+ "," + Math.floor(Math.random() * 180) + ","
-			+ Math.floor(Math.random() * 180) + ")";
-		if(blinky) {
-			blinky.style.color = rgb;
-		}
-	}, 100);
-});
-</script>
-	</head>
-	<body>
-		<div class="content">
-			<div class="title"><b>Bard Music Players</b> for FFXIV</div>
-			<div class="Discord">
-				<div class="BMPlink"><a href="https://discord.gg/ykEgTVWTWv" target="_blank"><img src="BMPDI.png" alt="BMP" style="max-width:30%;"></a>
-				<p>BMP Discord</p>
-				</div>
-				<div class="MB2link"><a href="https://discord.gg/fvxjPGtS7E" target="_blank"><img src="MB2.png" alt="Midi Bard 2" style="max-width:25%;"></a>
-				<p>Mbard 2 Discord</p>
-				</div>
-				<div class="LAlink"><a href="https://discord.gg/fvxjPGtS7E" target="_blank"><img src="LA.png" alt="Light Amp" style="max-width:36%;"></a>
-				<p>LA Discord</p>
-				</div>
-			</div>
-			<!--<img class="showcase" style="float:left;max-width:50%;" src="bmp.png"/>
-
-			<p class="showcase" style="font-size:20px"><b>Bard Music Player</b> is an automated music player for playing MIDI songs in FFXIV using the Bard's <i>Performance</i> mode.</p>
-
-			<p>This program allows you to automatically play pre-made MIDI songs for the in-game instrument performance feature in FFXIV. In addition, it provides many more useful features such as: playlist, searching, note preview, lyrics, piano input, chat logging, and orchestra mode (multi-performer).</p>-->
-			
-			
-			<div style="clear:both;height:0px;"></div>
-			<div class="minimenu">
-				<a class="entry" href="changelog.html" target="_blank">Changelog</a>
-				<a class="entry" href="faq.html" target="_blank">FAQ</a>
-				<a class="entry" href="manual.html" target="_blank">Manual</a>
-				<a class="entry" href="https://songs.bardmusicplayer.com" target="_blank">Midi Repository</a>
-			</div>
-			<div class="splitpanel">
-
-			<div style="width:25%">
-				<h4>Downloads</h4>
-				<p>
-				        <br/><b>Bard Music Player:</b>
-					<br/>- <a href="http://dl.bardmusicplayer.com/bmp/2.1/BardMusicPlayer2.zip" target="_blank">BMP 2.1.1</a> (Patch 7.25)
-					<br/><b>Light Amp</b>
-					<br/>- <a href="https://github.com/GiR-Zippo/LightAmp/releases" target="_blank">LightAmp Latest</a>
-					<br/><b>Midi Bard 2</b>
-					<br/>- <a href="https://github.com/reckhou/MidiBard2/blob/v2-api12-stable/README.md" target="_blank">MidiBard2 Latest</a>
-					<br/>
-					<br/><b>ChipMidiEditor:</b>
-					<br/>- <a href="https://dl.bardmusicplayer.com/chipmidieditor/ChipMidiEditor-1.0.0-Setup.exe.zip" target="_blank">ChipMidiEditor 1.0</a>
-					<br/>
-				</p>
-			</div>
-			<!--<div>
-				<h4>Quick start</h4>
-				<p>PLACE HOLDER</p>
-				<p>P2 place holder</p>
-			</div>-->
-			</div>
-			<h4>Community Tutorials and Links</h4>
-			<ul class="" style="text-align:left">	
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bard Music Player</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet"></link>
+</head>
+<body>
+  <header>
+    <div><strong>Bard Music Players</strong></div>
+    <nav>
+      <a href="https://songs.bardmusicplayer.com/" target="_blank">MIDI Repository</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <h1>Play Your Favorite Songs in Eorzea</h1>
+    <p>Below are three choices that allow you to play MIDI files in Final Fantasy XIV.</p>
+    <!--<div class="buttons">
+      <button class="btn btn-secondary">Join the Community</button>
+    </div>-->
+  </section>
+  <section class="downloads" style="padding: 4rem 2rem; background-color: #141423; text-align: center;">
+    <h2 style="font-size: 2rem; margin-bottom: 2rem;">Choose Your Player</h2>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem;">
+      <div style="background-color: rgba(255,255,255,0.05); padding: 2rem; border-radius: 10px; width: 280px;">
+        <img src="BMPDI.png" alt="BMP Logo" style="width: 64px; height: auto; margin-bottom: 1rem;">
+        <a href="https://discord.gg/ykEgTVWTWv" target="_blank" style="color: #6fa8dc;">
+          <img src="https://img.icons8.com/ios-filled/16/6fa8dc/discord-logo.png" style="vertical-align: middle; margin-right: 5px;"/>Join BMP Discord
+        </a>
+        <button class="btn btn-primary" style="margin-top: 1rem;">Download BMP</button>
+        <a href="https://bardmusicplayer.com/manual" target="_blank" style="display:block; margin-top: 0.5rem; font-size: 0.85rem; color: #ccc;">BMP Manual (Outdated)</a>
+      </div>
+      <div style="background-color: rgba(255,255,255,0.05); padding: 2rem; border-radius: 10px; width: 280px;">
+        <img src="LA.png" alt="LightAmp Logo" style="width: 48px; height: auto; margin-bottom: 1rem;">
+        <a href="https://discord.gg/fvxjPGtS7E" target="_blank" style="color: #6fa8dc;">
+          <img src="https://img.icons8.com/ios-filled/16/6fa8dc/discord-logo.png" style="vertical-align: middle; margin-right: 5px;"/>Join LightAmp Discord
+        </a>
+        <a href="https://github.com/GiR-Zippo/LightAmp/releases" target="_blank" class="btn btn-primary" style="margin-top: 1rem; display: inline-block; text-decoration: none;">Download LightAmp</a>
+        <a href="https://github.com/GiR-Zippo/LightAmp/wiki" target="_blank" style="color: #ccc;">LightAmp Wiki</a>
+      </div>
+      <div style="background-color: rgba(255,255,255,0.05); padding: 2rem; border-radius: 10px; width: 280px;">
+        <img src="MB2.png" alt="Midibard 2 Logo" style="width: 48px; height: auto; margin-bottom: 1rem;">
+        <a href="https://discord.gg/fvxjPGtS7E" target="_blank" style="color: #6fa8dc;">
+          <img src="https://img.icons8.com/ios-filled/16/6fa8dc/discord-logo.png" style="vertical-align: middle; margin-right: 5px;"/>Join Midibard 2 Discord
+        </a>
+        <a href="https://github.com/reckhou/MidiBard2/blob/v2-api12-stable/README.md" target="_blank" class="btn btn-primary" style="margin-top: 1rem; display: inline-block; text-decoration: none;">Download Midibard 2</a>
+        <a href="https://raw.githubusercontent.com/reckhou/MidiBard2/v2-api7-stable/Manual/Midibard_Manual.pdf" target="_blank" style="display:block; margin-top: 0.5rem; font-size: 0.85rem; color: #ccc;">Midibard2 Manual</a>
+      </div>
+    </div>
+  </section>
+  <Section class="community">
+	<h1>Community Tutorials and Links</h1>
+			<ul class="community">	
 			<div>
+				<li><a href="https://discord.gg/rhfbDgm7pa" target="_blank" style="color: #6fa8dc;">
+          		<img src="https://img.icons8.com/ios-filled/16/6fa8dc/discord-logo.png"/>Join the BML Discord
+        		</a>For another good source of MIDI's</li>
+				<li><a href="https://xivmidi.com/" target="_blank">Bard Midi Library</a> Website for an expansive list of MIDI's</li>
 				<li><a href="https://reddit.com/r/ffxivperformances" target="_blank">/r/ffxivperformances</a> Performance community</li>
 				<li><a href="https://github.com/BardMusicPlayer/bardmusicplayer" target="_blank">Bard Music Player source code</a> on GitHub</li>
-				<li><a href="https://fatcatchronicles.com/bard-music-player/" target="_blank">My interview with Fat Cat Chronicles - Bard Music Player</a></li>
-				<li><a href="https://www.youtube.com/watch?v=LJIjevBUYd4" target="_blank">How to Unlock Bard Performance and Play Midi Files in Final Fantasy XIV</a></li>
+				<!--<li><a href="https://www.youtube.com/watch?v=LJIjevBUYd4" target="_blank">How to Unlock Bard Performance and Play Midi Files in Final Fantasy XIV</a></li>-->
 				<li><a href="https://aywren.com/2018/10/22/ffxiv-bard-music-performance-in-eorzea/" target="_blank">Aywren - FFXIV: Bard Music Performance in Eorzea</a></li>
-				<li><a href="https://twitter.com/i/moments/1062695683038240773" target="_blank">[日本語] Logue - Japanese guide to Bard Music Player (1.01)</a></li>
+				<!--<li><a href="https://twitter.com/i/moments/1062695683038240773" target="_blank">[日本語] Logue - Japanese guide to Bard Music Player (1.01)</a></li>-->
 				<li><a href="https://docs.google.com/document/d/1EL4Q10PsbKjx4Zby_NblOp6hKQS6R042aWsjMm9XeE4/edit" target="_blank">[한국어] CocoPomel - Korean guide to Bard Music Player</a></li>
 				<li><a href="https://docs.google.com/presentation/d/1Fei3WL8TciD0OPqbGWts7hrLXpJUM9uGOA121x2yZwQ/edit?usp=sharing" target="_blank">callmeki - Using MML to edit midi for FFXIV Bard Music Player</a></li>
 			
 			</div>
-</ul>
-			<h4>Discord</h4>
-			<div class="content">
-			<iframe class="showcase" style="float:left;max-width:50%;" src="https://discord.com/widget?id=1361449015245541448&theme=dark" width="450" height="350" allowtransparency="true" frameborder="0">
-
-			<p class="showcase" style="font-size:20px"><b>Bard Music Player</b> is an automated music player for playing MIDI songs in FFXIV using the Bard's <i>Performance</i> mode.</p>
-
-			<p>This program allows you to automatically play pre-made MIDI songs for the in-game instrument performance feature in FFXIV. In addition, it provides many more useful features such as: playlist, searching, note preview, lyrics, piano input, chat logging, and orchestra mode (multi-performer).</p>
-			<div style="clear:both;height:0px;"></div>
-			<iframe src="https://discord.com/widget?id=1361449015245541448&theme=dark" width="450" height="250" allowtransparency="true" frameborder="0"></iframe>
-			<p>Feel free to join our Discord server to find useful guides, tip & tricks, or to become a MIDI editor and share your work!</p>
-		
-			</div>
-			
-			            <p style="clear:both; text-align:leftrgin-top:20px;">Bard Music Player (c) 2018 - 2025</p>
-
-			<br/><br/>
-		</div>
-	</body>
+	</ul>
+  </Section>
+<footer>
+	<p style="clear:both; text-align:center;padding:20px;">Bard Music Players (c) 2018 - 2025
+	<!--</br> Credits:
+	</br> - Jack T-->
+	</p>
+</footer>
+</body>
 </html>
