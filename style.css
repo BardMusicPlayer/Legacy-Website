@@ -1,11 +1,11 @@
-/* */
+/* 
 * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-}
+}*/
 /*General body CSS*/
-body {
+html {
       font-family: 'Inter', sans-serif;
       background: linear-gradient(135deg, #0f0f1a, #1c1c2e);
       color: white;
@@ -35,7 +35,8 @@ nav a:hover {
 /*Hero Secton CSS*/
 .hero {
       text-align: center;
-      padding: 6rem 2rem 4rem;
+      padding: 1rem 2rem 1rem;
+	  line-height: 1;
 }
 
 .hero h1 {
@@ -69,11 +70,28 @@ hero .buttons {
       font-size: 1rem;
       cursor: pointer;
       transition: background 0.3s;
+      width: 200px;
 }
 
 .btn-primary {
       background-color: #3a5bff;
       color: white;
+      margin-top: 1rem; 
+      display: inline-block;
+      text-decoration: none;
+      max-width: 160px;
+      vertical-align: middle;
+      margin-left: 1rem;
+}
+.btn-other {
+      background-color: #3a5bff;
+      color: white;
+      margin-top: 1rem; 
+      display: inline-block;
+      text-decoration: none;
+      max-width: 160px;
+      vertical-align: middle;
+
 }
 
 .btn-primary:hover {
@@ -125,6 +143,67 @@ blink {
    animation-iteration-count: infinite;
    animation-timing-function: steps(1, start);
 }
+[popover]:popover-open {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+[popover] {
+  font-size: 1.2rem;
+  padding: 10px;
+  color: #ccc;
+background-color: #1e202c;
+border: transparent;
+max-width: 75%;
+  /* Final state of the exit animation */
+  opacity: 0;
+  transform: scaleX(0);
+
+  transition:
+    opacity 0.7s,
+    transform 0.7s,
+    overlay 0.7s allow-discrete,
+    display 0.7s allow-discrete;
+  /* Equivalent to
+  transition: all 0.7s allow-discrete; */
+}
+
+/* Needs to be included after the previous [popover]:popover-open
+   rule to take effect, as the specificity is the same */
+@starting-style {
+  [popover]:popover-open {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+}
+
+/* Transition for the popover's backdrop */
+
+[popover]::backdrop {
+  background-color: rgb(0 0 0 / 0%);
+  transition:
+    display 0.7s allow-discrete,
+    overlay 0.7s allow-discrete,
+    background-color 0.7s;
+  /* Equivalent to
+  transition: all 0.7s allow-discrete; */
+}
+
+[popover]:popover-open::backdrop {
+  background-color: rgb(0 0 0 / 25%);
+}
+
+/* Nesting selectors (&) cannot represent pseudo-elements, so this 
+   starting-style rule cannot be nested. */
+
+@starting-style {
+  [popover]:popover-open::backdrop {
+    background-color: rgb(0 0 0 / 0%);
+  }
+}
+
+
+
 @keyframes blinky {
    50% {
 	   visibility: hidden;
