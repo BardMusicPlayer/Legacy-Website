@@ -68,11 +68,6 @@ nav a:hover {
 	margin-bottom: 2rem;
 }
 
-.downloads a {
-	display: block;
-	margin-top: 0.5rem;
-	font-size: 0.9rem;
-}
 
 .downloads-grid {
 	display: flex;
@@ -86,6 +81,11 @@ nav a:hover {
 	padding: 2rem;
 	border-radius: 10px;
 	width: 280px;
+	text-align: center;
+}
+
+.card img {
+	max-width: 100%;
 }
 
 .card-wide {
@@ -105,6 +105,9 @@ nav a:hover {
 }
 /* Discord links */
 .discord-link {
+	display: block;
+	margin-top: 0.5rem;
+	font-size: 0.9rem;
 	color: #6fa8dc;
 }
 
@@ -124,6 +127,7 @@ nav a:hover {
 
 .info-btn img {
 	width: 15px;
+	height: auto;
 }
 /* Sub-links (manuals, wikis) */
 .sub-link {
