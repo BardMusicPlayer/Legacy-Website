@@ -144,7 +144,6 @@ nav a:hover {
       font-size: 1rem;
       cursor: pointer;
       transition: background 0.3s;
-      width: 200px;
 }
 
 .btn-primary,
