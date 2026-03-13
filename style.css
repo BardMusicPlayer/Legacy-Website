@@ -1,15 +1,15 @@
-/* 
 * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-}*/
-/*General body CSS*/
+}
+/* General body CSS */
 html {
       font-family: 'Inter', sans-serif;
       background: linear-gradient(135deg, #0f0f1a, #1c1c2e);
       color: white;
       line-height: 1.6;
+      scroll-behavior: smooth;
 }
 header {
       display: flex;
@@ -21,7 +21,7 @@ header {
       top: 0;
       z-index: 10;
 }
-/*Nav bar link CSS*/
+/* Nav bar link CSS */
 nav a {
       margin: 0 1rem;
       text-decoration: none;
@@ -32,7 +32,7 @@ nav a {
 nav a:hover {
       color: white;
 }
-/*Hero Secton CSS*/
+/* Hero Section CSS */
 .hero {
       text-align: center;
       padding: 1rem 2rem 1rem;
@@ -51,18 +51,88 @@ nav a:hover {
       margin: 0 auto 2rem;
 }
 
-hero .buttons {
+.hero .buttons {
       display: flex;
       justify-content: center;
       gap: 1rem;
 }
-/*Download section*/
-.downloads a{
-	display:block; 
-	margin-top: 0.5rem;
-	font-size: 0.9rem; 
-
+/* Downloads section */
+.downloads {
+	padding: 4rem 2rem;
+	background-color: #141423;
+	text-align: center;
 }
+
+.downloads h2 {
+	font-size: 2rem;
+	margin-bottom: 2rem;
+}
+
+.downloads a {
+	display: block;
+	margin-top: 0.5rem;
+	font-size: 0.9rem;
+}
+
+.downloads-grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 2rem;
+}
+/* Card styles */
+.card {
+	background-color: rgba(255, 255, 255, 0.05);
+	padding: 2rem;
+	border-radius: 10px;
+	width: 280px;
+}
+
+.card-wide {
+	width: 480px;
+}
+
+.card-icon {
+	width: 54px;
+	height: auto;
+	margin-bottom: 1rem;
+}
+
+.card-icon-sm {
+	width: 48px;
+	height: auto;
+	margin-bottom: 1rem;
+}
+/* Discord links */
+.discord-link {
+	color: #6fa8dc;
+}
+
+.discord-icon {
+	vertical-align: middle;
+	margin-right: 5px;
+}
+/* Info button */
+.info-btn {
+	vertical-align: middle;
+	padding-top: 2px;
+	margin-top: 15px;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+.info-btn img {
+	width: 15px;
+}
+/* Sub-links (manuals, wikis) */
+.sub-link {
+	display: block;
+	margin-top: 0.5rem;
+	font-size: 0.85rem;
+	color: #ccc;
+}
+/* Buttons */
 .btn {
       padding: 0.75rem 1.5rem;
       border: none;
@@ -73,28 +143,19 @@ hero .buttons {
       width: 200px;
 }
 
-.btn-primary {
-      background-color: #3a5bff;
-      color: white;
-      margin-top: 1rem; 
-      display: inline-block;
-      text-decoration: none;
-      max-width: 160px;
-      vertical-align: middle;
-      margin-left: 1rem;
-}
+.btn-primary,
 .btn-other {
       background-color: #3a5bff;
       color: white;
-      margin-top: 1rem; 
+      margin-top: 1rem;
       display: inline-block;
       text-decoration: none;
       max-width: 160px;
       vertical-align: middle;
-
 }
 
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-other:hover {
       background-color: #2741cc;
 }
 
@@ -106,44 +167,55 @@ hero .buttons {
 .btn-secondary:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
-/*Community section*/
-.community{
-	padding-left:5%;
+/* Focus styles for keyboard navigation */
+a:focus-visible,
+button:focus-visible {
+	outline: 2px solid #6fa8dc;
+	outline-offset: 2px;
 }
-.community h1{ 
+/* Footer */
+footer {
+	text-align: center;
+	padding: 20px;
+}
+/* Community section */
+.community {
+	padding-left: 5%;
+}
+.community h1 {
 	text-align: center;
 	font-size: 2.75rem;
     margin-bottom: 1rem;
 }
-.community a{
+.community a {
 	color: #6fa8dc;
 }
-/*Discord*/
-.discord{
-	padding-left:5%;
+/* Discord widget */
+.discord {
+	padding-left: 5%;
 }
-.discord h1{
+.discord h1 {
 	text-align: center;
 	font-size: 2.75rem;
     margin-bottom: 1rem;
 }
 #discord-widget .widgetHeader-2Hz_Ln {
-	padding:0;
+	padding: 0;
 }
-/*IDK*/
+
 .i-cant-read {
-	font-weight:bold;
-	color:red;
-	font-size:18px;
+	font-weight: bold;
+	color: red;
+	font-size: 18px;
 }
-/*Also Dont know */
+
 blink {
    animation-duration: 0.2s;
    animation-name: blinky;
    animation-iteration-count: infinite;
    animation-timing-function: steps(1, start);
 }
-/*Help text Popup animation*/
+/* Help text Popup animation */
 [popover]:popover-open {
   opacity: 1;
   transform: scaleX(1);
@@ -153,10 +225,9 @@ blink {
   font-size: 1.2rem;
   padding: 10px;
   color: #ccc;
-background-color: #1e202c;
-border: transparent;
-max-width: 75%;
-  /* Final state of the exit animation */
+  background-color: #1e202c;
+  border: transparent;
+  max-width: 75%;
   opacity: 0;
   transform: scaleX(0);
 
@@ -165,12 +236,8 @@ max-width: 75%;
     transform 0.7s,
     overlay 0.7s allow-discrete,
     display 0.7s allow-discrete;
-  /* Equivalent to
-  transition: all 0.7s allow-discrete; */
 }
 
-/* Needs to be included after the previous [popover]:popover-open
-   rule to take effect, as the specificity is the same */
 @starting-style {
   [popover]:popover-open {
     opacity: 0;
@@ -178,24 +245,17 @@ max-width: 75%;
   }
 }
 
-/* Transition for the popover's backdrop */
-
 [popover]::backdrop {
   background-color: rgb(0 0 0 / 0%);
   transition:
     display 0.7s allow-discrete,
     overlay 0.7s allow-discrete,
     background-color 0.7s;
-  /* Equivalent to
-  transition: all 0.7s allow-discrete; */
 }
 
 [popover]:popover-open::backdrop {
   background-color: rgb(0 0 0 / 25%);
 }
-
-/* Nesting selectors (&) cannot represent pseudo-elements, so this 
-   starting-style rule cannot be nested. */
 
 @starting-style {
   [popover]:popover-open::backdrop {
@@ -203,21 +263,23 @@ max-width: 75%;
   }
 }
 
-
-
 @keyframes blinky {
    50% {
 	   visibility: hidden;
    }
 }
 
-@media (max-width:620px) {
+@media (max-width: 620px) {
 	figure > img {
-		width:100%;
-		height:auto;
+		width: 100%;
+		height: auto;
 	}
 	.splitpanel > div {
-		display:block;
-		width:100% !important;
+		display: block;
+		width: 100% !important;
+	}
+	.card,
+	.card-wide {
+		width: 100%;
 	}
 }
