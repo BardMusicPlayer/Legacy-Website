@@ -116,13 +116,20 @@ nav a:hover {
 	margin-right: 5px;
 }
 /* Info button */
+.btn-row {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	margin-top: 1rem;
+}
+
 .info-btn {
-	vertical-align: middle;
-	padding-top: 2px;
-	margin-top: 15px;
 	background: none;
 	border: none;
 	cursor: pointer;
+	padding: 0;
+	line-height: 0;
 }
 
 .info-btn img {
@@ -150,7 +157,6 @@ nav a:hover {
 .btn-other {
       background-color: #3a5bff;
       color: white;
-      margin-top: 1rem;
       display: inline-block;
       text-decoration: none;
 }
