@@ -152,11 +152,8 @@ nav a:hover {
       background-color: #3a5bff;
       color: white;
       margin-top: 1rem;
-      display: block;
+      display: inline-block;
       text-decoration: none;
-      max-width: 200px;
-      margin-left: auto;
-      margin-right: auto;
 }
 
 .btn-primary:hover,
